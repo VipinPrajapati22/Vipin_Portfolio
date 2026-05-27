@@ -453,21 +453,22 @@ export default function Hero() {
                 
                 <div className="flex w-full sm:w-auto items-center gap-3">
                   <button
-                    onClick={() => {
-                      // Trigger a print window of the content
-                      window.print();
+                   onClick={() => {
+  const pdfWindow = window.open('/CV.pdf');
+  pdfWindow?.print();
                     }}
                     className="w-full sm:w-auto px-4 py-2 border border-solid border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold cursor-pointer text-center"
                   >
                     Print CV
                   </button>
 
-                  <a
-                    href="mailto:vipin22nov@gmail.com?subject=Requesting Vipin's Resume/CV"
-                    className="w-full sm:w-auto px-4 py-2 bg-sky-600 dark:bg-cyan-500 text-white rounded-xl hover:bg-sky-700 dark:hover:bg-cyan-600 text-xs font-semibold cursor-pointer text-center shadow-sm"
-                  >
-                    Request PDF Resume
-                  </a>
+               <a
+  href="/CV.pdf"
+  download="Vipin_CV.pdf"
+  className="px-6 py-3 rounded-2xl bg-cyan-500 text-white font-semibold hover:bg-cyan-600 transition-all"
+>
+  Request PDF Resume
+</a>
                 </div>
               </div>
 
