@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-blue-50: #f0f7ff;
+  --color-brand-blue-100: #e0effe;
+  --color-brand-blue-500: #0284c7;
+  --color-brand-blue-600: #025091;
+  --color-brand-blue-700: #1d4ed8;
+  --color-brand-dark: #030712;
+  --color-brand-card-light: #ffffff;
+  --color-brand-card-dark: #0f172a;
+  
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-spin-slow: spin 20s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card-bg: #ffffff;
+  --card-border: rgba(15, 23, 42, 0.05);
+  --accent-cyan: #06b6d4;
+  --accent-blue: #0284c7;
+}
+
+.dark {
+  --background: #030712;
+  --foreground: #f8fafc;
+  --card-bg: #0b0f19;
+  --card-border: rgba(255, 255, 255, 0.05);
+  --accent-cyan: #22d3ee;
+  --accent-blue: #38bdf8;
+}
+
+html, body {
+  background-color: var(--background);
+  color: var(--foreground);
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(14, 165, 233, 0.15);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(14, 165, 233, 0.35);
+}
+
+.glass-nav {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.dark .glass-nav {
+  background-color: rgba(3, 7, 18, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .glass-card {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.glass-card:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 10px 40px -10px rgba(6, 182, 212, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Scroll progress bar animation */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--accent-cyan), var(--accent-blue));
+  transform-origin: 0%;
+  z-index: 100;
+}
