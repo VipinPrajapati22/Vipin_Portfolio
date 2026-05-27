@@ -77,8 +77,6 @@ export default function About() {
             <p>
 
               As a B.Pharm student at <strong>JSS Academy of Technical Education, Noida (AKTU)</strong>, I have focused my academic studies on understanding drug pathways, pharmacological kinetics, and safety boundaries. However, I believe that the future of effective healthcare lies in how we interpret clinical data.
-
-              As a 6th-semester B.Pharm student at <strong>JSS Academy of Technical Education, Noida (AKTU)</strong>, I have focused my academic studies on understanding drug pathways, pharmacological kinetics, and safety boundaries. However, I believe that the future of effective healthcare lies in how we interpret clinical data.
             </p>
             
             <p>

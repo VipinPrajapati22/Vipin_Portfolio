@@ -349,8 +349,8 @@ export default function Hero() {
                 <div className="flex items-center gap-2.5">
                   <FileText className="w-6 h-6 text-sky-600 dark:text-cyan-400" />
                   <div>
-                    <h3 className="font-bold text-slate-950 dark:text-white">Curriculum Vitae</h3>
-                    <p className="text-xs text-slate-500 dark:text-slate-400">Vipin Prajapati • Pharmacy Student</p>
+                    <h3 className="font-bold text-slate-950 dark:text-white">CV</h3>
+                    <p className="text-xs text-slate-500 dark:text-slate-400">Vipin • B.Pharm</p>
                   </div>
                 </div>
                 <button
@@ -366,7 +366,7 @@ export default function Hero() {
                 {/* CV Heading */}
                 <div className="text-center pb-6 border-b border-solid border-slate-100 dark:border-slate-800 space-y-1.5">
                   <h4 className="text-xl font-bold text-slate-950 dark:text-white">Vipin</h4>
-                  <p className="text-sky-600 dark:text-cyan-400 font-medium">B.Pharm Scholar | Healthcare Data Analyst & Pharma-Tech Professional</p>
+                  <p className="text-sky-600 dark:text-cyan-400 font-medium">B.Pharm | Data Analyst & Pharma-Tech Professional</p>
                   <p className="text-xs text-slate-500 dark:text-slate-400">Noida, Uttar Pradesh • vipin22nov@gmail.com • +91 XXXXX XXXXX</p>
                 </div>
 
@@ -374,7 +374,7 @@ export default function Hero() {
                 <div>
                   <h5 className="font-bold text-slate-950 dark:text-white uppercase tracking-wider text-xs border-l-2 border-cyan-500 pl-2 mb-2">Professional Objective</h5>
                   <p>
-                    Highly motivated 6th-semester Bachelor of Pharmacy (B.Pharm) student at JSS Academy of Technical Education, Noida (AKTU) transitioning into Healthcare Data Analytics and Pharmaceutical Technology. Equipped with specialized capabilities in Excel, Power BI, SQL, Python, and clinical database handling alongside solid pharmacology knowledge. Seeking a data-driven clinical analyst or pharmacovigilance (PV) research internship to audit safety metrics and support clinical decision systems.
+                     Bachelor of Pharmacy (B.Pharm) , JSS Academy of Technical Education, Noida (AKTU) transitioning into Healthcare Data Analytics and Pharmaceutical Technology. Equipped with specialized capabilities in Excel, Power BI, SQL, Python, and clinical database handling alongside solid pharmacology knowledge. Seeking a data-driven clinical analyst or pharmacovigilance (PV) research internship to audit safety metrics and support clinical decision systems.
                   </p>
                 </div>
 
@@ -389,7 +389,7 @@ export default function Hero() {
                       </div>
                       <div className="text-right text-xs">
                         <span className="font-semibold text-slate-900 dark:text-slate-100">2023 - 2027</span>
-                        <p className="text-emerald-500 font-semibold">GPA: 8.2/10 (Current)</p>
+                        <p className="text-emerald-500 font-semibold">2023-2027 (Current)</p>
                       </div>
                     </div>
                   </div>
