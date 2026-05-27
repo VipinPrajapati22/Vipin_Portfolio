@@ -75,7 +75,11 @@ export default function About() {
             </h3>
             
             <p>
+<<<<<<< HEAD
               As a B.Pharm student at <strong>JSS Academy of Technical Education, Noida (AKTU)</strong>, I have focused my academic studies on understanding drug pathways, pharmacological kinetics, and safety boundaries. However, I believe that the future of effective healthcare lies in how we interpret clinical data.
+=======
+              As a 6th-semester B.Pharm student at <strong>JSS Academy of Technical Education, Noida (AKTU)</strong>, I have focused my academic studies on understanding drug pathways, pharmacological kinetics, and safety boundaries. However, I believe that the future of effective healthcare lies in how we interpret clinical data.
+>>>>>>> 0c218111b157f0f08dd79d4d9bb4ad17d0ff7995
             </p>
             
             <p>
