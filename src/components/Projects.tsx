@@ -12,7 +12,7 @@ type ProjectItem = {
   tools: string[];
   liveLink: string | null;
   githubLink: string | null;
-  visualType: "web" | "powerbi" | "sql" | "excel" | "python";
+  image?: string; //
 };
 
 // Custom coded interactive preview thumbnails for premium UX
@@ -189,8 +189,17 @@ export default function Projects() {
       description: "A healthcare-focused web application designed to spread awareness about harmful drug interactions and improve medication safety using accessible pharmaceutical information.",
       tools: ["HTML", "CSS", "JavaScript", "Healthcare Content"],
       liveLink: "https://drug-interaction-awareness-system-c.vercel.app/",
-      githubLink: "https://github.com",
-      visualType: "web"
+      githubLink: "https://github.com/VipinPrajapati22",
+      image:"/drug-interaction.png"
+    },
+{
+      title: "PV Sentinel",
+      category: "webapps",
+      description: "PV Sentinel is an AI-powered pharmacovigilance platform for ADR monitoring, signal detection, risk management and drug safety intelligence.",
+      tools: ["HTML", "CSS", "JavaScript", "Healthcare Content"],
+      liveLink: "https://pv-sentinel-theta.vercel.app/",
+      githubLink: "https://github.com/VipinPrajapati22",
+      image:"/pv-senntinel.png"
     },
     {
       title: "Healthcare Dashboard using Power BI",
@@ -198,8 +207,8 @@ export default function Projects() {
       description: "An interactive business intelligence dashboard modeling pharmacovigilance adverse reaction signals, clinical patient safety indices, and reporting volume trends over time.",
       tools: ["Power BI", "DAX", "Data Modeling", "Excel Source"],
       liveLink: null,
-      githubLink: "https://github.com",
-      visualType: "powerbi"
+      githubLink: "https://github.com/VipinPrajapati22",
+      image:"/powerbi-dashboard.png"
     },
     {
       title: "SQL-based Medical Data Analysis",
@@ -207,8 +216,8 @@ export default function Projects() {
       description: "A comprehensive clinical database audit query library built to isolate drug side-effects, analyze patient demography trends, and evaluate therapeutic dosage frequencies.",
       tools: ["SQL", "Relational Database", "Queries & JOINs", "Data Auditing"],
       liveLink: null,
-      githubLink: "https://github.com",
-      visualType: "sql"
+      githubLink: "https://github.com/VipinPrajapati22",
+      image:"/sql-analysis.png"
     },
     {
       title: "Excel Healthcare Reporting System",
@@ -216,8 +225,8 @@ export default function Projects() {
       description: "A complex automated workbook designed to prepare patient logs, calculate medication safety statistics, and generate summarized pivot-chart reporting sheets.",
       tools: ["Excel", "Pivot Tables", "Advanced Formulas", "Conditional Formats"],
       liveLink: null,
-      githubLink: "https://github.com",
-      visualType: "excel"
+      githubLink: "https://github.com/VipinPrajapati22",
+      image:"/excel-reporting.png"
     },
     {
       title: "Python Data Analytics Project",
@@ -225,8 +234,8 @@ export default function Projects() {
       description: "Exploratory data analysis scripts checking drug-drug interaction alerts and side-effect correlations using clinical safety databases.",
       tools: ["Python", "Pandas", "Matplotlib", "Jupyter Notebook"],
       liveLink: null,
-      githubLink: "https://github.com",
-      visualType: "python"
+      githubLink: "https://github.com/VipinPrajapati22/VipinPrajapati22",
+      image:"/python-analytics.png"
     }
   ];
 
@@ -309,8 +318,11 @@ export default function Projects() {
                 >
                   <div>
                     {/* Visual Coded Preview Thumbnail */}
-                    <ProjectThumbnail type={project.visualType} />
-
+<img
+  src={project.image}
+  alt={project.title}
+  className="w-full h-48 object-cover"
+/>
                     {/* Content padding */}
                     <div className="p-6 space-y-4">
                       <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-cyan-500 dark:group-hover:text-cyan-400 transition-colors leading-tight font-sans">
@@ -348,7 +360,7 @@ export default function Projects() {
                       </a>
                     ) : (
                       <span className="flex-1 py-2 px-4 rounded-xl text-center text-xs font-bold bg-slate-100 dark:bg-slate-900 text-slate-400 dark:text-slate-600 border border-solid border-slate-200/5 dark:border-slate-800/10 cursor-not-allowed">
-                        Coming Soon
+                        Working on it 
                       </span>
                     )}
 
