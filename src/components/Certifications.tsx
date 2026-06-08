@@ -4,7 +4,20 @@ import { motion } from "framer-motion";
 import { Award, Calendar } from "lucide-react";
 
 export default function Certifications() {
-  const certifications = [
+  const certifications: {
+  title: string;
+  issuer: string;
+  status: string;
+  description: string;
+  certificateUrl?: string;
+}[] = [
+    {
+      title: "ICH Good Clinical Practices (GCP) Certification",
+      issuer: "The National Institute on Drug Abuse (NIDA)",
+      status: "Issued Jun 2026",
+      certificateUrl: "/certificates/ich-gcp-certificate.pdf",
+      description: "Covered key aspects of clinical research, including Institutional Review Boards (IRBs), informed consent, participant safety, confidentiality and privacy, quality assurance, research protocols, documentation and record-keeping, research misconduct, recruitment and retention, and investigational new drugs."
+    },
     {
       title: "Microsoft Excel Specialist (Advanced)",
       issuer: "Microsoft Certification Pathways",
@@ -103,6 +116,16 @@ export default function Certifications() {
                 <p className="text-sm text-slate-550 dark:text-slate-450 leading-relaxed border-t border-solid border-slate-100 dark:border-slate-850 pt-4 font-sans">
                   {cert.description}
                 </p>
+                {cert.certificateUrl && (
+  <a
+    href={cert.certificateUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block mt-4 px-4 py-2 rounded-lg bg-cyan-500 text-white text-sm font-semibold hover:bg-cyan-600 transition"
+  >
+    🏆 View Credential
+  </a>
+)}
               </div>
             </motion.div>
           ))}
