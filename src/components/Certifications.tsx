@@ -20,8 +20,9 @@ export default function Certifications() {
     },
     {
       title: "Microsoft Excel Specialist (Advanced)",
-      issuer: "Microsoft Certification Pathways",
-      status: "In Progress / Target Q3 2026",
+      issuer: "SkillCourse",
+      status: "Issued Jun 2026",
+      certificateUrl: "/certificates/microsoft-excel-certificate.pdf",
       description: "Focusing on advanced data models, lookup functions, pivot tables, data cleaning, and statistical reporting structures."
     },
     {
